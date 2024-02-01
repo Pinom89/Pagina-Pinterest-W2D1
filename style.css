@@ -1,0 +1,132 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;}
+
+.contaner{
+padding: 100px;
+background-color: rgb(192, 191, 183);
+opacity: 1.2;
+}
+.card{
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-image: url(immagine/Copia\ di\ Copia\ di\ 825716941387441.png);
+    position: relative;
+    box-shadow: 0 5px 8px grey;
+    background-position: center;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+.save{
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    border-radius:25px;
+    padding: 10px 15px;
+    transition: top 0.05s ease-in;
+    cursor: pointer;
+    transition: bottom 0.5s ease-in-out, opacity 0.4s ease-in-out;
+    
+}
+
+.card:hover .save{
+    top: 20px;
+    
+}
+
+.condividi, .dots{
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 80px;
+    align-items: center;
+    font-size: 1.1em;
+    opacity: 0.8;
+    cursor: pointer;
+    position: absolute;
+    height:30px;
+    width: 50px;
+    bottom: -50px;
+    transition: bottom 0.5s ease-in-out, opacity 0.4s ease-in-out;
+
+}
+.label {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 1.1em;
+    opacity: 0.8;
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width:150px;
+    bottom: -40px;
+    transition: bottom 0.5s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+   .text_button { 
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    padding:10px;
+}
+
+
+
+.label{
+    left: 20px;
+    bottom: -50px;
+    display:flex;
+
+}
+.condividi{
+    left: 220px;
+    bottom:-50px;
+    
+}
+.dots {
+    left: 300px;
+    bottom: -50px;
+}
+
+.label:hover, .condividi:hover, .dots:hover {
+    opacity: 1;
+    filter: brightness(1.5);
+    }
+
+.card:hover .bottom .label,.card:hover .bottom .condividi, .card:hover .bottom .dots {
+        bottom: 20px;
+        transition: bottom 0,05s ease-in-out;
+
+    }
+
+    .bottom:hover .save{
+        opacity: 1;
+    }
+
+    .bottom{
+        position: absolute;
+        bottom:20px;
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
+        height: 30px;
+        justify-content: center;
+
+
+
+    }
